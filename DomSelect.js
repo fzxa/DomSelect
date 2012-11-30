@@ -63,7 +63,6 @@
    
  
 	dom.mix(dom,{
-		//http://www.cnblogs.com/rubylouvre/archive/2010/03/14/1685360.
 		isXML : function(el){
 			var doc = el.ownerDocument || el
 			return doc.createElement("p").nodeName !== doc.createElement("P").nodeName;
@@ -102,7 +101,6 @@
 			}
 			var result = [], array = [], uniqResult = {}, node = nodes[0],index, ri = 0
 			//如果支持sourceIndex我们将使用更为高效的节点排序
-			//http://www.cnblogs.com/jkisjk/archive/2011/01/28/array_quickly_sortby.html
 			if(node.sourceIndex){//IE opera
 				for(var i = 0 , n = nodes.length; i< n; i++){
 					node = nodes[i];
